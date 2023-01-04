@@ -23,15 +23,11 @@
 
 
 
+<input id="myLink" onclick="disableButton(this)" type="submit" value="Акордбанк-інфраструктура" style="font-weight: bold;font-size:medium;width:100.2%;margin-left: 2px;margin-right: 2px;margin-top: 5px;padding-right: 0px;padding-left: 0px;background-color: lightgrey;color: black">
+<br>
+<br>
 
-<div class="wrapper">
-    <a id="myLink" href="#";return false;"><span>Акордбанк-інфраструктура</span></a>
-</div>
-
-
-
-
-<div id="newpost">
+<div id="newpost" class="row">
 
 </div>
 
@@ -52,7 +48,7 @@
             document.getElementById('img2').remove();
         }
 
-        document.getElementById("newpost").innerHTML = "<img id='img1' class='branches' src='/branches.gif' style='margin-top: 2%;', height = 607, width=600><img id='img2' class='map' src='/map.gif', height =600>"
+        document.getElementById("newpost").innerHTML = " <img id='img1' class='' src='/branches.gif' height=583, width=650 style='margin-top: -1%'><img id='img2' class='' src='/map.gif' height=576 width=650>"
 
 
         var transparent1PxGif1 = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
@@ -99,52 +95,7 @@
     }
 
 
-    .wrapper{
-        position: fixed;
-        top: 13%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
 
-    a{
-        display: block;
-        width: 500px;
-        height: 40px;
-        line-height: 40px;
-        font-size: 18px;
-        font-family: sans-serif;
-        text-decoration: none;
-        color: #333;
-        border: 2px solid #333;
-        letter-spacing: 2px;
-        text-align: center;
-        position: relative;
-        transition: all .35s;
-    }
-
-    a span{
-        position: relative;
-        z-index: 2;
-    }
-
-    a:after{
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: #ff003b;
-        transition: all .35s;
-    }
-
-    a:hover{
-        color: #fff;
-    }
-
-    a:hover:after{
-        width: 100%;
-    }
 
 
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
@@ -159,6 +110,19 @@
         div.textspec {
             font-size: 30px;
         }
+    }
+
+    .center {
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .row img {
+        display:inline-block;
+    }
+    .row{
+        text-align:center;
     }
 
 
